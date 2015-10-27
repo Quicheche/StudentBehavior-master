@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basic_info_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/background"
+    android:orientation="vertical" >
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="16dip"
+		android:paddingRight="16dip"
+	    android:orientation="vertical" >
+	        
+	        
+	    <!-- Basic Information -->
+
+	    
+	    <EditText android:id="@+id/scholar_name"
+	        android:inputType="textCapWords"
+	        android:hint="@string/scholar_name"
+	        android:layout_gravity="right"
+	        android:layout_width="match_parent"
+	        android:paddingTop="16dip"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+	    
+	    
+	    <!-- drop-down for grade -->
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	 
+		    <TextView android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:text="@string/grade"
+		        android:padding="10dip"
+		        android:layout_weight="1" />
+		    <Spinner
+		        android:id="@+id/grade_spinner"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="right"
+		        android:entries="@array/grade_array" />
+	    </LinearLayout>
+	    
+	    
+	    <!-- date -->
+	    <DatePicker 
+	        android:id="@+id/SelectDate"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="match_parent" 
+	        android:maxDate="12/02/2014"
+	        android:layout_height="wrap_content"
+	        android:gravity="center|center_horizontal|center_vertical"
+	        android:calendarViewShown="false" />
+	    
+	    
+
+	    
+	   
+	        
+	    </LinearLayout>
+	    
+
+</ScrollView>

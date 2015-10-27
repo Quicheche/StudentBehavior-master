@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/academic_report_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    
+   <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="16dip"
+		android:paddingRight="16dip"
+	    android:orientation="vertical" >
+    
+    	    
+	    
+	     <!-- drop-down for academic setting-->
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        
+		    <TextView android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:padding="10dip"
+		        android:layout_weight="1"
+		        android:text="@string/location" />
+		    <Spinner
+		        android:id="@+id/academic_settings_spinner"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:entries="@array/settings_array" />
+	    </LinearLayout>    
+	        
+
+	
+	    <!-- checkboxes for academic report -->
+	    <!-- 1 -->
+	    <CheckBox android:id="@+id/checkbox_academic_respectsLearningForSelfAndOthers"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_respectsLearningForSelfAndOthers"
+	        android:textColor="@color/positive_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 2 -->
+	    <CheckBox android:id="@+id/checkbox_academic_followsDirections"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_followsDirections"
+	        android:textColor="@color/positive_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 3 -->
+	    <CheckBox android:id="@+id/checkbox_academic_consistentlyPreparedAndOrganized"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_consistentlyPreparedAndOrganized"
+	        android:textColor="@color/positive_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 4 -->
+	    <CheckBox android:id="@+id/checkbox_academic_completesHomeworkAndAssignments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_completesHomeworkAndAssignments"
+	        android:textColor="@color/positive_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 5 -->
+	    <CheckBox android:id="@+id/checkbox_academic_staysOnTask"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_staysOnTask"
+	        android:textColor="@color/positive_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 6 -->
+	    <CheckBox android:id="@+id/checkbox_academic_peerTutoring"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_peerTutoring"
+	        android:textColor="@color/positive_color"
+	        android:onClick="onCheckboxClicked"/>
+	    
+		<!-- Negative Academic Reports -->
+	    <!-- 7 -->
+	    <CheckBox android:id="@+id/checkbox_academic_struggles"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_struggles"
+	        android:textColor="@color/negative_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 8 -->
+	    <CheckBox android:id="@+id/checkbox_academic_disruptionOfClassLessonActivity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_disruptionOfClassLessonActivity"
+	        android:textColor="@color/negative_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 9 -->
+	    <CheckBox android:id="@+id/checkbox_academic_refusalToFollowDirectionsAndParticipate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_refusalToFollowDirectionsAndParticipate"
+	        android:textColor="@color/negative_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 10 -->
+	    <CheckBox android:id="@+id/checkbox_academic_unPreparedAndDisorganized"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_unPreparedAndDisorganized"
+	        android:textColor="@color/negative_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 11 -->
+	    <CheckBox android:id="@+id/checkbox_academic_failureToCompleteHomeworkAssignment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_failureToCompleteHomeworkAssignment"
+	        android:textColor="@color/negative_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- 12 -->
+	    <CheckBox android:id="@+id/checkbox_academic_questionableAcademicIntegrity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/academic_questionableAcademicIntegrity"
+	        android:textColor="@color/negative_color"
+	        android:onClick="onCheckboxClicked"/>
+	    <!-- comments -->
+	    <EditText android:id="@+id/academic_comment"
+	        android:inputType="textMultiLine|textCapSentences"
+	        android:minHeight="120dp" 
+		   	android:hint="@string/comments"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	        
+	    
+	    
+	    </LinearLayout>
+    
+
+</ScrollView>

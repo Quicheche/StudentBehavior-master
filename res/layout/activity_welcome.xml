@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.studentbehavior.WelcomeActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="100dp"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:textStyle="bold" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@color/positive_color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="View Report By Name"
+            android:textColorHint="@color/negative_color"
+            android:textSize="@dimen/btn_text_size" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="View Report By Date"
+            android:textSize="@dimen/btn_text_size" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="View Line Chart"
+            android:textSize="@dimen/btn_text_size" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="View Bar Chart"
+            android:textSize="@dimen/btn_text_size" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="Create a New Report"
+            android:textSize="@dimen/btn_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

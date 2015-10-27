@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="negative_color">#5A1919</color>
+    <color name="positive_color">#004700</color>
+    <color name="black_overlay">#66000000</color>
+    <color name ="background">#FFFFCC</color>
+
+</resources>
